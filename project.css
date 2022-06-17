@@ -1,0 +1,23 @@
+table {
+    border-color: black  ;
+    border-style: solid ;
+    border-collapse: collapse;
+    text-align: center;
+    width: 40%;
+    }
+    table,tr,td{
+        border: 1px solid black;
+        }      
+.baslik {
+    background-color: yellow;
+    text-align: center;
+    font-weight: bold;
+}
+tr{
+    width: 150%;
+}
+iframe{
+    width: 560;
+    height: 315;
+    
+}

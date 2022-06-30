@@ -1,0 +1,180 @@
+<html lang="En">
+    <head>
+        <title>HTML & CSS Projecet</title>
+        <link  href="logo.jpeg">
+        <style>
+          ol{ 
+              color: blue;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            } 
+           ul{
+            color:black;
+            font-family: 'Courier New', Courier, monospace;
+            list-style-type:square;
+            font-weight: 500;
+             } 
+            #lin{
+                color: black;
+            }
+        </style>
+        <link rel="stylesheet" href="OH_Project.css">
+    </head>
+<!--Task2:
+a) On the tap of the page write the head of project ‘HTML & CSS Office Hour Small Project’ Tip: Use
+<h1>
+Style: Change the color, and background of title using inline styling CSS
+b) Write the purpose of the project in two small paragraph : ‘The first purpose of that small project is to
+refresh hour HTML and CSS knowled.’
+èseparate p1 and p2 using <hr> element…
+‘Second aim of that project to apply our HTML and CSS knowledge and do practice. ‘
+Note: before Writing paragraoh use <h2> tag to add heading of ‘Heading and Paragraph in HTML’
+Style: In first paragraph, Use <b>, <em>, <u> and in second paragraph use <bdo> tags with dir =’rtl’ attribute.
+c) Add Pdf Project description to the wep page:
+Note: use <div> tags to separate all other task from each other.
+Style: Use different background-color for each <div> tag using inline CSS tyle.-->
+    <body style="background-color: floralwhite;">
+        <h1 style="color: red; background-color:rgb(0, 183, 255)">HTML & CSS Office Hour Small Project</h1>
+        <h2>Task2: Heading and Paragraph in HTML</h2>
+        <p>The <em> first purpose of </em> that <u> small project </u> is to
+            refresh hour <b>HTML and CSS </b> knowled</p>
+        <p> <bdo dir="rtl"> Second aim of that project to apply our HTML and CSS knowledge and do practice </bdo>
+
+        </p>
+        <h2>Add PDF File in HTML</h2>
+        <iframe src="HTML&CSS Project Instructions.pdf"   width="900" height="300"></iframe>
+        <div id="list">
+        <h2>Task3: Lists in HTML </h2> 
+        <h3>Ordered List</h3>
+        <ol type="I">
+            <li>Apex is Easy but we need to do practice.</li>
+            <li>Prepare for Interview </li>
+            <li>Do practice on trailhead</li>
+            <li>Revise all class from time to time </li>
+        </ol>
+        <h3> Unordered List </h3>
+        <ul>
+            <li>Get some Fruit</li>
+            <li>Bread</li>
+            <li>Egg</li>
+            <li>Milk</li>
+            <li>Cookies</li>
+        </ul>
+        </div>
+        <div id="iframe">
+            <h2>Task4: Iframes In HTML</h2>
+            <iframe src="https://www.bbc.com/" width="900" height="300"></iframe>
+            <iframe src="child.html" frameborder="0"></iframe>
+
+
+        </div>
+    <div id="table">
+        <h2>Task5: Table in HTML </h2>
+        <table>
+            <tr>
+                <td colspan="5" id="title">The Course Information</td>
+            </tr>
+            <tr>
+                <th class="course">Courses</th>
+                <th>Hours/wk</th>
+                <th>Course Length</th>
+                <th>Start Date</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td class="course">JavaScript</td>
+                <td>3</td>
+                <td>1 Month/td>
+                <td> 1-Apr</td>
+                <td>500$</td>
+            </tr>
+            <tr>
+                <td class="course">Apex</td>
+                <td>5</td>
+                <td>3 Month/td>
+                <td> 5-Apr</td>
+                <td>2000$</td>
+            </tr>
+            <tr>
+                <td class="course">HTML&CSS</td>
+                <td>3</td>
+                <td>2 Week/td>
+                <td> 1-May</td>
+                <td>300$</td>
+            </tr>
+            <tr>
+                <td class="course">Saalesforce</td>
+                <td>5</td>
+                <td>3 Month/td>
+                <td> 5-Apr</td>
+                <td>2000$</td>
+            </tr>
+        </table>
+    </div>
+   
+    <div id="link">
+        <h2 id="lin">Task6:Links in HTML </h2>
+        <a href="https://www.w3schools.com/html/default.asp" target="_blank">
+            For more Information about HTML Click Here</a> <hr>
+        <a href="#list">Go Back Task3</a>
+        
+    </div>
+    <div id="form">
+        <h2>Task7: Forms in HTML</h2>
+        <form style="font-size: large; background-color:bisque;">
+            <fieldset>
+                <legend>Personel Information</legend>
+                <label for="fname">Fisrt Name:</label><br>
+                <input type="text" name="fname" id="fname" required> <br>
+                <label for="lname">Last Name:</label><br>
+                <input type="text" name="lname" id="lname" required> <br>
+                <label for="dob">Date of Birth</label><br>
+                <input type="date" name="dob" id="dob"><br>
+                <p>Gender</p>
+                <input type="radio" id="m" name="Gender" value="Man">
+                <label for="m">Man</label> <br>
+                <input type="radio" id="w" name="Gender" value="Woman">
+                <label for="w">Woman</label> <br>
+                <input type="radio" id="o" name="Gender" value="Other">
+                <label for="o">Other</label>
+            </fieldset>
+            <fieldset>
+                <legend>Details Information</legend>
+                <label for="educ">Educatiom</label> <br>
+                <input type="checkbox" id="under"  class="educ">
+                <label for="under">Undergrad</label> <br>
+                <input type="checkbox" id="mast" class="educ" >
+                <label for="mast">Master</label> <br>
+                <input type="checkbox" id="phd" class="educ">
+                <label for="phd">Phd</label> <br>
+                <input type="checkbox" id="boot"class="educ" >
+                <label for="boot">BootCamp</label> <br>
+               <label for="country">Country of Apply: </label> <br>
+                <select name="Country" id="country">
+                    <option value="USA">USA</option>
+                    <option value="UK">UK</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Spain">Spain</option> 
+                    <option value="Turkiye">Turkiye</option>
+                </select> <br>
+                <label for="courses"> Interest Area:</label><br>
+                <select multiple id="courses">
+                    <option value="Apex">Apex</option>
+                    <option value="Java">Java</option>
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                </select><br>
+                <label for="text">Please provide more information below:</label><br>
+                <textarea name="text" id="text" cols="90" rows="5" placeholder="provide more info here:"></textarea> <br>
+                <label for="file">Upload your file here:</label><br>
+                <input type="file"  id="file"> <br>
+                <input type="button" value="Submit" id="submit"> 
+                <input type="button" value="Refresh" name="" id="">
+                <button>Re-Satart</button>
+            </fieldset>
+        </form>
+
+    </div>
+
+    <div></div>
+    </body>
+</html>
